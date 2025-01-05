@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  border-radius: 7px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  background-image: url(arkaplan3.jpg);
+  width: 100%;
+  height: 80px;
+}
+nav #menuBtn {
+  display: none;
+}
+
+nav .menuBtn {
+  font-size: 1.7rem;
+  color: #f1fafe;
+  float: right;
+  line-height: 80px;
+  margin-right: 2rem;
+  display: none;
+}
+
+nav .logo {
+  color: #f1fafe;
+  font-size: 2rem;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 2rem;
+}
+
+nav ul {
+  float: right;
+  margin-right: 2rem;
+}
+nav ul .emaill a:hover {
+  background: red;
+  z-index: -1;
+  border-bottom: 4px solid rgb(16, 16, 53);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 0.2rem;
+}
+
+nav ul li a {
+  color: #f1fafe;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  background: #e63946;
+}
+
+nav ul li a:hover {
+  background: #0066ff;
+  z-index: -1;
+  border-bottom: 4px solid rgb(16, 16, 53);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+/*Bölüm 1*/
+.bolum1 {
+  background-image: url(arkaplan3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 90px;
+  gap: 40px;
+}
+.bolum1 .yazi {
+  flex: 5;
+}
+
+.bolum1 .yazi h2 {
+  font-size: 35px;
+}
+
+.bolum1 .fotograf {
+  height: 300px;
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+.bolum1 .fotograf img {
+  width: 300px;
+  border-radius: 80%;
+}
+
+.bolum1 .fotoyazi p {
+  text-decoration: none;
+  font-size: medium;
+  display: block;
+}
+.bolum1 .fotoyazi p a {
+  color: #f1fafe;
+  text-decoration: none;
+}
+.bolum1 .fotoyazi p a:hover {
+  color: yellow;
+}
+
+/*Bölüm2*/
+/* Bölüm 2:   */
+.yetenek-bolumu {
+  background-image: url(arkaplan3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.yetenek-bolumu h2 {
+  color: yellow;
+  text-align: center;
+  font-size: 35px;
+}
+
+.yetenek-bolumu .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.yetenek-bolumu .kutular {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.yetenek-bolumu .kutular .kutu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 3.5px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.yetenek-bolumu .kutular .kutu img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.yetenek-bolumu .kutular .kutu a {
+  text-decoration: none;
+  color: #f1fafe;
+}
+
+.yetenek-bolumu .kutular .kutu span {
+  font-size: 18px;
+}
+
+/* Bölüm 3 */
+.kisaozet {
+  display: block;
+  background-image: url(arkaplan.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.kisaozet h2 {
+  color: yellow;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.kisaozet .group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.kisaozet .group .person-details {
+  text-align: center;
+  flex: 2;
+}
+
+.kisaozet .group .person-details img {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.kisaozet .group .person-details p {
+  font-weight: 600;
+}
+
+.kisaozet .group .person-details p:last-child {
+  font-weight: normal;
+}
+
+/* Bölüm 4:   */
+.İletisimbolumu {
+  height: 670px;
+  background-image: url(arkaplan3.jpg);
+  color: white;
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.İletisimbolumu h2 {
+  font-size: 35px;
+  color: yellow;
+}
+
+.İletisimbolumu .group {
+  display: flex;
+  gap: 50px;
+}
+
+.İletisimbolumu .group .text {
+  flex: 3;
+  margin-top: 20px;
+}
+
+.İletisimbolumu .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.İletisimbolumu .group form input,
+.İletisimbolumu .group form textarea {
+  font-family: "Poppins", sans-serif;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+.İletisimbolumu .group form button a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.İletisimbolumu .group form button {
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(0, 145, 255);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.İletisimbolumu .group form button:hover {
+  filter: brightness(0.9);
+  background-color: rgb(107, 148, 178);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+.footer-distributed {
+  background: url(arkaplan.jpg);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  position: relative;
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Cookie", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: #5383d3;
+}
+
+.footer-distributed .footer-bilgi {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: red;
+  text-decoration: none;
+}
+.footer-distributed .footer-center p a:hover {
+  color: yellow;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+  .main {
+    line-height: normal;
+    font-size: auto;
+  }
+}
+
+@media (max-width: 938px) {
+  nav .menuBtn {
+    display: initial;
+  }
+
+  nav ul {
+    position: fixed;
+    background-image: url(arkaplan.jpg);
+    width: 100%;
+    height: calc(100vh - 80px);
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    left: -100%;
+  }
+  nav ul li {
+    display: block;
+    min-width: 80%;
+    text-align: center;
+    line-height: 4rem;
+  }
+
+  nav ul li a {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  nav #menuBtn:checked ~ ul {
+    left: 0;
+  }
+
+  nav #menuBtn:checked ~ label.menuBtn i::before {
+    content: "\f00d";
+  }
+}
+@media (max-width: 740px) {
+  /* Bölüm 1:   */
+  .bolum1 {
+    flex-direction: column-reverse;
+  }
+
+  .bolum1 .fotograf img {
+    width: 250px;
+  }
+  /* Bölüm 3:   */
+  .kisaozet {
+    text-align: center;
+  }
+
+  .kisaozet .group {
+    flex-direction: column;
+  }
+  /* Bölüm 4:   */
+  .İletisimbolumu .group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Bölüm 1 */
+  .bolum1 {
+    padding: 0 20px;
+  }
+
+  .bolum1 .text h2 {
+    font-size: 30px;
+  }
+
+  /* Bölüm 3*/
+  .kisaozet {
+    padding: 0 20px;
+  }
+
+  /* Bölüm 4:   */
+  .İletisimbolumu {
+    padding: 0 20px;
+  }
+}
